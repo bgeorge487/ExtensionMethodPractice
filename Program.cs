@@ -13,6 +13,7 @@
         Console.WriteLine(log1.SubstringBetween(">>>", "<===<"));
         //Console.WriteLine(log3.Message());
         //Console.WriteLine(log4.LogLevel());
+    
     }
 }
 
