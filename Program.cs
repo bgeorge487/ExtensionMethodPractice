@@ -37,7 +37,7 @@ public static class LogAnalysis
         logLine = logLine.Substring(firstStringIndex, length);*/
 
         //Third Attempt
-
+        /*
         //After First String
         int firstLength = firstString.Length;
         int firstIndex = logLine.IndexOf(firstString) + firstLength;
@@ -47,8 +47,12 @@ public static class LogAnalysis
         //Before Second String
         int secondIndex = logLine.IndexOf(secondString) - 1;
         //string secondSubstring = logLine.Substring(0,secondIndex);
+        */
+         //THANK YOU STACKOVERFLOW
+        int pos1 = logLine.IndexOf(firstString) + firstString.Length;
+        int pos2 = logLine.IndexOf(secondString);
 
-        logLine = logLine.Substring(firstIndex, secondIndex);
+        logLine = logLine.Substring(pos1, pos2 - pos1);
 
         return logLine;
     }
